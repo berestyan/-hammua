@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>HammUA — Украинское сообщество города Хамм</title>
 
 <meta name="description" content="HammUA — украинское сообщество города Хамм (Германия). Новости, помощь, работа, мероприятия и Telegram.">
+
 <meta name="keywords" content="HammUA,Hamm,Хамм,Украинцы в Германии,Telegram HammUA,Новости Хамма,Работа Германия">
+
 <meta name="robots" content="index,follow">
+
+<meta name="author" content="Vitaliy Berestyan">
+
 <meta name="theme-color" content="#6D28D9">
 
 <link rel="canonical" href="https://hammua.de/">
@@ -17,51 +24,97 @@
 <meta property="og:title" content="HammUA">
 <meta property="og:description" content="Украинское сообщество города Хамм">
 <meta property="og:url" content="https://hammua.de">
+<meta property="og:site_name" content="HammUA">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HammUA">
+<meta name="twitter:description" content="Новости • Помощь • Работа • Сообщество">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"Organization",
- "name":"HammUA",
- "url":"https://hammua.de",
- "sameAs":[
-  "https://t.me/hamm_ua",
-  "https://facebook.com/berestyan"
- ]
+"@context":"https://schema.org",
+"@type":"Organization",
+"name":"HammUA",
+"url":"https://hammua.de",
+"description":"Украинское сообщество города Хамм",
+"sameAs":[
+"https://t.me/hamm_ua",
+"https://facebook.com/berestyan"
+]
 }
 </script>
 
 <style>
 
+:root{
+
+--bg:#080811;
+
+--glass:rgba(255,255,255,.08);
+
+--border:rgba(255,255,255,.15);
+
+--purple:#8b5cf6;
+
+--purpleDark:#6d28d9;
+
+--text:#ffffff;
+
+}
+
 *{
+
 margin:0;
+
 padding:0;
+
 box-sizing:border-box;
-font-family:Inter,sans-serif;
+
+font-family:"Inter",sans-serif;
+
 }
 
 html{
+
 scroll-behavior:smooth;
+
 }
 
 body{
 
+min-height:100vh;
+
 background:
-linear-gradient(rgba(5,5,15,.45),rgba(5,5,15,.8)),
+
+linear-gradient(rgba(5,5,15,.45),rgba(5,5,15,.80)),
+
 url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=2400&q=80");
 
 background-size:cover;
+
 background-position:center;
+
 background-attachment:fixed;
 
-color:#fff;
-
 overflow-x:hidden;
+
+color:var(--text);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:30px;
+
+position:relative;
 
 }
 
@@ -73,41 +126,39 @@ position:fixed;
 
 inset:0;
 
+pointer-events:none;
+
 background:
 
-radial-gradient(circle at top,#8b5cf640 0%,transparent 45%),
+radial-gradient(circle at top,#8b5cf650 0%,transparent 40%),
 
-radial-gradient(circle at bottom,#6d28d930 0%,transparent 40%);
+radial-gradient(circle at bottom,#4f46e540 0%,transparent 35%);
 
-animation:glow 12s infinite;
-
-pointer-events:none;
+animation:glow 12s ease-in-out infinite;
 
 }
 
 @keyframes glow{
 
 0%,100%{
+
 transform:scale(1);
+
 }
 
 50%{
+
 transform:scale(1.08);
-}
 
 }
 
-.hero{
+}
 
-min-height:100vh;
+.container{
 
-display:flex;
+width:100%;
 
-justify-content:center;
-
-align-items:center;
-
-padding:30px;
+max-width:760px;
 
 }
 
@@ -115,45 +166,40 @@ padding:30px;
 
 position:relative;
 
-max-width:920px;
+padding:70px 50px;
 
-width:100%;
+border-radius:36px;
 
-padding:70px 55px;
+background:var(--glass);
 
-border-radius:40px;
-
-text-align:center;
-
-background:rgba(255,255,255,.08);
-
-border:1px solid rgba(255,255,255,.14);
+border:1px solid var(--border);
 
 backdrop-filter:blur(30px);
 
 -webkit-backdrop-filter:blur(30px);
 
+text-align:center;
+
 box-shadow:
 
 0 30px 80px rgba(0,0,0,.45),
 
-0 0 70px rgba(124,58,237,.18);
+0 0 80px rgba(124,58,237,.15);
 
 overflow:hidden;
 
 animation:show .8s ease;
 
 }
-
 .card::before{
 
 content:"";
 
 position:absolute;
 
-top:0;
-
 left:-70%;
+
+top:0;
 
 width:45%;
 
@@ -162,27 +208,30 @@ height:100%;
 background:
 
 linear-gradient(
-
 90deg,
-
 transparent,
-
-rgba(255,255,255,.16),
-
+rgba(255,255,255,.18),
 transparent
-
 );
 
 transform:skewX(-25deg);
 
-animation:shine 9s infinite;
+animation:shine 8s infinite;
 
 }
 
 @keyframes shine{
 
+0%{
+
+left:-70%;
+
+}
+
 100%{
+
 left:170%;
+
 }
 
 }
@@ -193,7 +242,7 @@ from{
 
 opacity:0;
 
-transform:translateY(40px) scale(.95);
+transform:translateY(40px) scale(.96);
 
 }
 
@@ -209,25 +258,25 @@ transform:none;
 
 .logo{
 
-width:90px;
+width:110px;
 
-height:90px;
+height:110px;
 
-margin:auto;
+margin:0 auto 28px;
 
-margin-bottom:25px;
+border-radius:32px;
 
 display:flex;
 
-align-items:center;
-
 justify-content:center;
 
-font-size:44px;
+align-items:center;
+
+font-size:54px;
 
 font-weight:900;
 
-border-radius:28px;
+color:#fff;
 
 background:
 
@@ -241,13 +290,13 @@ border:1px solid rgba(255,255,255,.18);
 
 box-shadow:
 
-0 10px 35px rgba(124,58,237,.35);
+0 12px 40px rgba(124,58,237,.35);
 
 }
 
 h1{
 
-font-size:78px;
+font-size:72px;
 
 font-weight:900;
 
@@ -278,51 +327,17 @@ transparent
 
 }
 
-h2{
+.subtitle{
 
-font-size:32px;
-
-font-weight:600;
+font-size:28px;
 
 color:#ede9fe;
 
-margin-bottom:40px;
+font-weight:600;
 
-}
+margin-bottom:45px;
 
-.list{
-
-display:grid;
-
-gap:16px;
-
-max-width:470px;
-
-margin:0 auto 45px;
-
-}
-
-.list div{
-
-padding:18px;
-
-border-radius:18px;
-
-background:rgba(255,255,255,.05);
-
-border:1px solid rgba(255,255,255,.08);
-
-backdrop-filter:blur(12px);
-
-transition:.3s;
-
-}
-
-.list div:hover{
-
-transform:translateX(8px);
-
-background:rgba(255,255,255,.09);
+line-height:1.4;
 
 }
 
@@ -330,7 +345,7 @@ background:rgba(255,255,255,.09);
 
 display:flex;
 
-gap:22px;
+gap:20px;
 
 justify-content:center;
 
@@ -342,23 +357,23 @@ flex-wrap:wrap;
 
 width:280px;
 
-height:66px;
+height:68px;
 
 display:flex;
 
-align-items:center;
-
 justify-content:center;
+
+align-items:center;
 
 text-decoration:none;
 
-font-weight:700;
-
 font-size:20px;
 
-border-radius:20px;
+font-weight:700;
 
-transition:.3s;
+border-radius:22px;
+
+transition:.35s;
 
 color:#fff;
 
@@ -366,9 +381,18 @@ color:#fff;
 
 .telegram{
 
-background:linear-gradient(135deg,#9d6bff,#7c3aed,#5b21b6);
+background:
 
-box-shadow:0 15px 45px rgba(124,58,237,.45);
+linear-gradient(
+135deg,
+#a855f7,
+#7c3aed,
+#5b21b6
+);
+
+box-shadow:
+
+0 15px 45px rgba(124,58,237,.45);
 
 }
 
@@ -386,33 +410,25 @@ transform:translateY(-6px);
 
 }
 
-footer{
+.card:hover{
 
-padding:70px 30px;
+transform:translateY(-6px);
 
-text-align:center;
+box-shadow:
 
-background:rgba(0,0,0,.25);
+0 40px 100px rgba(0,0,0,.45),
 
-backdrop-filter:blur(20px);
-
-}
-
-.seo{
-
-max-width:900px;
-
-margin:35px auto;
-
-font-size:15px;
-
-line-height:1.8;
-
-opacity:.75;
+0 0 120px rgba(124,58,237,.20);
 
 }
 
 @media(max-width:768px){
+
+body{
+
+padding:20px;
+
+}
 
 .card{
 
@@ -422,11 +438,11 @@ padding:45px 28px;
 
 .logo{
 
-width:72px;
+width:90px;
 
-height:72px;
+height:90px;
 
-font-size:34px;
+font-size:42px;
 
 }
 
@@ -436,9 +452,9 @@ font-size:52px;
 
 }
 
-h2{
+.subtitle{
 
-font-size:24px;
+font-size:22px;
 
 }
 
@@ -455,50 +471,33 @@ width:100%;
 }
 
 }
-
 </style>
+
 </head>
+
 <body>
-<section class="hero">
+
+<div class="container">
 
 <div class="card">
 
 <div class="logo">
-
-H
-
+💜
 </div>
 
 <h1>HammUA</h1>
 
 <div class="line"></div>
 
-<h2>
-
-Украинское сообщество города Хамм
-
-</h2>
-
-<div class="list">
-
-<div>📰 Новости Хамма и региона</div>
-
-<div>🤝 Помощь украинцам в Германии</div>
-
-<div>💼 Работа и вакансии</div>
-
-<div>🎉 События и мероприятия</div>
-
-<div>📢 Полезная информация каждый день</div>
-
-</div>
+<p class="subtitle">
+Украинское сообщество<br>
+города Хамм
+</p>
 
 <div class="buttons">
 
 <a class="btn telegram"
-
 href="https://t.me/hamm_ua"
-
 target="_blank">
 
 🚀 Перейти в Telegram
@@ -506,9 +505,7 @@ target="_blank">
 </a>
 
 <a class="btn admin"
-
 href="https://t.me/berestyan"
-
 target="_blank">
 
 ✉️ Связаться с администратором
@@ -519,118 +516,41 @@ target="_blank">
 
 </div>
 
-</section>
+<p style="margin-top:35px;text-align:center;opacity:.65;font-size:15px;line-height:1.7;">
 
-<footer>
+HammUA — независимое украинское сообщество города Хамм (Германия).<br>
 
-<h2 style="margin-bottom:18px;font-size:34px;">
-
-💜 HammUA
-
-</h2>
-
-<p style="font-size:20px;opacity:.9;">
-
-Новости • Помощь • Работа • Сообщество
-
-</p>
-
-<div style="margin:35px 0;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
-
-<a class="btn telegram"
-
-style="width:220px;height:56px;font-size:18px;"
-
-href="https://t.me/hamm_ua"
-
-target="_blank">
-
-Telegram
-
-</a>
-
-<a class="btn admin"
-
-style="width:220px;height:56px;font-size:18px;"
-
-href="https://t.me/berestyan"
-
-target="_blank">
-
-Администратор
-
-</a>
-
-</div>
-
-<div class="seo">
-
-<h3 style="margin-bottom:20px;font-size:28px;">
-
-О сообществе HammUA
-
-</h3>
-
-<p>
-
-HammUA — независимое украинское сообщество города Хамм (Hamm, Nordrhein-Westfalen, Deutschland). Мы публикуем новости города Хамм, полезную информацию для украинцев, объявления о работе, мероприятиях, социальной поддержке, интеграции и жизни в Германии.
-
-</p>
-
-<p style="margin-top:20px;">
-
-Если вы ищете украинцев в Хамме, Telegram HammUA, работу в Hamm, помощь украинцам в Германии или актуальные новости Хамма — добро пожаловать в наше сообщество.
+Новости • Помощь • Работа • Мероприятия
 
 </p>
 
 </div>
-<p style="margin-top:40px;opacity:.55;font-size:14px;">
-© 2026 HammUA • Vitaliy Berestyan
-</p>
-
-</footer>
 
 <script>
 
-document.querySelectorAll(".btn").forEach(btn=>{
-
-btn.addEventListener("mouseenter",()=>{
-
-btn.style.transform="translateY(-6px) scale(1.02)";
-
-});
-
-btn.addEventListener("mouseleave",()=>{
-
-btn.style.transform="translateY(0) scale(1)";
-
-});
-
-});
-
-window.addEventListener("mousemove",(e)=>{
-
 const card=document.querySelector(".card");
 
-if(window.innerWidth<900) return;
+document.addEventListener("mousemove",(e)=>{
+
+if(window.innerWidth<900)return;
 
 const x=(e.clientX/window.innerWidth-.5)*8;
 
 const y=(e.clientY/window.innerHeight-.5)*8;
 
 card.style.transform=
-
 `rotateY(${x}deg) rotateX(${-y}deg)`;
 
 });
 
-window.addEventListener("mouseleave",()=>{
+document.addEventListener("mouseleave",()=>{
 
-document.querySelector(".card").style.transform="rotateX(0) rotateY(0)";
+card.style.transform="rotateX(0deg) rotateY(0deg)";
 
 });
 
 </script>
 
 </body>
+
 </html>
