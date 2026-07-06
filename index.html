@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HammUA — Украинское сообщество города Хамм</title>
+
+<meta name="description" content="HammUA — украинское сообщество города Хамм (Германия). Новости, помощь, работа, мероприятия и полезная информация для украинцев.">
+
+<meta name="keywords" content="HammUA,Hamm,Хамм,Украинцы в Германии,Українці в Німеччині,Telegram HammUA,Работа в Хамме,Новости Хамма,NRW,Deutschland">
+
+<meta name="robots" content="index,follow">
+<meta name="author" content="Vitaliy Berestyan">
+<meta name="theme-color" content="#6D28D9">
+
+<link rel="canonical" href="https://hammua.de/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="HammUA">
+<meta property="og:description" content="Украинское сообщество города Хамм">
+<meta property="og:url" content="https://hammua.de/">
+<meta property="og:site_name" content="HammUA">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HammUA">
+<meta name="twitter:description" content="Новости • Помощь • Работа • Сообщество">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Organization",
+"name":"HammUA",
+"url":"https://hammua.de",
+"description":"Украинское сообщество города Хамм",
+"sameAs":[
+"https://t.me/hamm_ua",
+"https://facebook.com/berestyan"
+]
+}
+</script>
+
+<style>
+
+:root{
+
+--bg:#070710;
+--glass:rgba(255,255,255,.08);
+--glass2:rgba(255,255,255,.05);
+--border:rgba(255,255,255,.12);
+
+--purple:#8b5cf6;
+--purple2:#6d28d9;
+
+--white:#ffffff;
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+font-family:"Inter",sans-serif;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+color:white;
+
+background:
+
+linear-gradient(rgba(5,5,15,.45),rgba(5,5,15,.75)),
+url("https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=2400&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+background-attachment:fixed;
+
+position:relative;
+
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+background:
+
+radial-gradient(circle at top,#8b5cf655 0%,transparent 45%),
+
+radial-gradient(circle at bottom,#4f46e555 0%,transparent 35%);
+
+pointer-events:none;
+
+animation:glow 12s linear infinite;
+
+}
+
+@keyframes glow{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.12);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+body::after{
+
+content:"";
+
+position:fixed;
+
+inset:-20%;
+
+background:
+
+radial-gradient(circle,#8b5cf620 0%,transparent 25%),
+
+radial-gradient(circle,#6d28d920 0%,transparent 20%),
+
+radial-gradient(circle,#ffffff08 0%,transparent 12%);
+
+background-size:
+
+700px 700px,
+
+900px 900px,
+
+450px 450px;
+
+filter:blur(70px);
+
+animation:backgroundMove 45s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes backgroundMove{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+50%{
+
+transform:translate(-80px,-40px);
+
+}
+
+100%{
+
+transform:translate(0,0);
+
+}
+
+}
+
+.hero{
+
+width:100%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.hero-box{
+
+position:relative;
+
+width:100%;
+
+max-width:920px;
+
+padding:70px 60px;
+
+text-align:center;
+
+background:var(--glass);
+
+border:1px solid var(--border);
+
+border-radius:42px;
+
+backdrop-filter:blur(35px);
+
+-webkit-backdrop-filter:blur(35px);
+
+box-shadow:
+
+0 30px 90px rgba(0,0,0,.45),
+
+0 0 80px rgba(139,92,246,.15);
+
+overflow:hidden;
+
+animation:show .8s ease;
+
+transition:
+
+transform .5s,
+
+box-shadow .5s;
+
+}
+
+.hero-box:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 40px 100px rgba(0,0,0,.55),
+
+0 0 120px rgba(139,92,246,.22);
+
+}
+
+.hero-box::before{
+
+content:"";
+
+position:absolute;
+
+left:-60%;
+
+top:0;
+
+width:45%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.18),
+
+transparent
+
+);
+
+transform:skewX(-20deg);
+
+animation:shine 8s infinite;
+
+}
+
+@keyframes shine{
+
+0%{
+
+left:-60%;
+
+}
+
+100%{
+
+left:160%;
+
+}
+
+}
+
+@keyframes show{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px) scale(.96);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+.logo{
+
+display:flex;
+
+justify-content:center;
+
+margin-bottom:28px;
+
+}
+
+.glass-logo{
+
+width:92px;
+
+height:92px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:30px;
+
+font-size:42px;
+
+font-weight:900;
+
+color:white;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(255,255,255,.18),
+
+rgba(255,255,255,.05)
+
+);
+
+border:1px solid rgba(255,255,255,.18);
+
+backdrop-filter:blur(25px);
+
+box-shadow:
+
+0 10px 35px rgba(139,92,246,.35),
+
+inset 0 1px 1px rgba(255,255,255,.3);
+
+}
+
+h1{
+
+font-size:82px;
+
+font-weight:900;
+
+letter-spacing:-3px;
+
+margin-bottom:18px;
+
+}
+
+.line{
+
+width:90px;
+
+height:4px;
+
+margin:0 auto 35px;
+
+border-radius:999px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+#a855f7,
+
+transparent
+
+);
+
+}
+
+h2{
+
+font-size:34px;
+
+font-weight:600;
+
+color:#ede9fe;
+
+margin-bottom:40px;
+
+}
+.features{
+
+margin:45px auto;
+
+max-width:460px;
+
+display:grid;
+
+gap:16px;
+
+}
+
+.features div{
+
+padding:18px 24px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+font-size:20px;
+
+font-weight:500;
+
+transition:.35s;
+
+}
+
+.features div:hover{
+
+transform:translateX(8px);
+
+background:rgba(255,255,255,.10);
+
+}
+
+.buttons{
+
+margin-top:45px;
+
+display:flex;
+
+justify-content:center;
+
+gap:22px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+width:280px;
+
+height:68px;
+
+border-radius:22px;
+
+text-decoration:none;
+
+font-size:20px;
+
+font-weight:700;
+
+color:white;
+
+transition:.35s;
+
+overflow:hidden;
+
+}
+
+.primary{
+
+background:linear-gradient(
+
+135deg,
+
+#9d6bff,
+
+#7c3aed,
+
+#5b21b6
+
+);
+
+background-size:300%;
+
+animation:gradient 8s linear infinite;
+
+box-shadow:
+
+0 15px 45px rgba(124,58,237,.45);
+
+}
+
+.secondary{
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.15);
+
+}
+
+.btn:hover{
+
+transform:translateY(-6px);
+
+}
+
+@keyframes gradient{
+
+0%{
+
+background-position:0%;
+
+}
+
+100%{
+
+background-position:300%;
+
+}
+
+}
+
+footer{
+
+margin-top:80px;
+
+padding:60px 30px;
+
+text-align:center;
+
+background:rgba(255,255,255,.04);
+
+border-top:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(25px);
+
+}
+
+footer a{
+
+color:#fff;
+
+text-decoration:none;
+
+opacity:.85;
+
+}
+
+.seo{
+
+margin:40px auto;
+
+max-width:850px;
+
+font-size:15px;
+
+line-height:1.8;
+
+opacity:.75;
+
+}
+
+@media(max-width:768px){
+
+body{
+
+padding:20px;
+
+}
+
+.hero-box{
+
+padding:42px 26px;
+
+border-radius:30px;
+
+}
+
+.glass-logo{
+
+width:72px;
+
+height:72px;
+
+font-size:34px;
+
+}
+
+h1{
+
+font-size:52px;
+
+letter-spacing:-2px;
+
+}
+
+h2{
+
+font-size:24px;
+
+}
+
+.features div{
+
+font-size:18px;
+
+padding:15px 18px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+.btn{
+
+width:100%;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-box">
+
+<div class="logo">
+
+<div class="glass-logo">
+
+H
+
+</div>
+
+</div>
+
+<h1>HammUA</h1>
+
+<div class="line"></div>
+
+<h2>
+
+Украинское сообщество города Хамм
+
+</h2>
+
+<div class="features">
+
+<div>📰 Новости Хамма</div>
+
+<div>🤝 Помощь украинцам</div>
+
+<div>💼 Работа и вакансии</div>
+
+<div>🎉 Мероприятия</div>
+
+<div>💜 Telegram-сообщество</div>
+
+</div>
+
+<div class="buttons">
+
+<a class="btn primary"
+
+href="https://t.me/hamm_ua"
+
+target="_blank">
+
+🚀 Перейти в Telegram
+
+</a>
+
+<a class="btn secondary"
+
+href="https://t.me/berestyan"
+
+target="_blank">
+
+✉️ Администратор
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<footer>
+
+<h3 style="font-size:32px;margin-bottom:15px;">💜 HammUA</h3>
+
+<p style="opacity:.9;margin-bottom:30px;">
+
+Новости • Помощь • Работа • Сообщество
+
+</p>
+
+<p style="margin-bottom:30px;">
+
+<a href="https://t.me/hamm_ua" target="_blank">
+
+Telegram
+
+</a>
+
+&nbsp;&nbsp;•&nbsp;&nbsp;
+
+<a href="https://t.me/berestyan" target="_blank">
+
+Администратор
+
+</a>
+
+</p>
+
+<div class="seo">
+
+<h2 style="margin-bottom:20px;">
+
+О сообществе HammUA
+
+</h2>
+
+<p>
+
+HammUA — независимое украинское сообщество города Хамм (Hamm, Nordrhein-Westfalen, Deutschland).
+
+Мы публикуем новости Хамма, информацию о работе, мероприятиях, интеграции,
+
+социальной помощи, жизни украинцев в Германии и полезные советы для новых жителей.
+
+</p>
+
+<br>
+
+<p>
+
+Если вы ищете украинцев в Хамме, новости Hamm, Telegram HammUA,
+
+работу в Хамме или помощь украинцам в Германии —
+
+добро пожаловать в HammUA.
+
+</p>
+
+</div>
+
+<p style="margin-top:50px;opacity:.55;font-size:14px;">
+
+© 2026 HammUA • Vitaliy Berestyan
+
+</p>
+
+</footer>
+
+<div class="stars">
+
+<span class="star" style="top:10%;left:12%"></span>
+
+<span class="star" style="top:18%;left:80%"></span>
+
+<span class="star" style="top:32%;left:58%"></span>
+
+<span class="star" style="top:44%;left:22%"></span>
+
+<span class="star" style="top:55%;left:72%"></span>
+
+<span class="star" style="top:67%;left:40%"></span>
+
+<span class="star" style="top:82%;left:18%"></span>
+
+<span class="star" style="top:88%;left:84%"></span>
+
+</div>
+
+<style>
+
+.stars{
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+.star{
+
+position:absolute;
+
+width:3px;
+
+height:3px;
+
+border-radius:50%;
+
+background:white;
+
+opacity:.25;
+
+animation:twinkle 5s infinite;
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+
+opacity:.2;
+
+transform:scale(1);
+
+}
+
+50%{
+
+opacity:.9;
+
+transform:scale(2);
+
+}
+
+}
+
+</style>
+
+</body>
+
+</html>
