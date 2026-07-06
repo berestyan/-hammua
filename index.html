@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HammUA | Новости. Помощь. Сообщество.</title>
+<title>HammUA – Украинцы в Хамме | Новости, помощь, работа, Германия</title>
 
-<meta name="description" content="HammUA — независимое сообщество жителей и друзей Хамма.">
+<meta name="description" content="HammUA — крупнейшее украинское сообщество города Хамм (Германия). Новости, помощь украинцам, работа, жильё, мероприятия и полезная информация.">
+<meta name="keywords" content="HammUA, Хамм, Hamm, Украина, Украинцы в Германии, Украинцы в Хамме, Telegram HammUA, Новости Хамма, Работа в Хамме, Германия, NRW, Deutschland">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Vitaliy Berestyan">
 <meta name="theme-color" content="#6D28D9">
 
-<meta property="og:title" content="HammUA">
-<meta property="og:description" content="Новости. Помощь. Сообщество.">
+<link rel="canonical" href="https://hammua.de/">
+
 <meta property="og:type" content="website">
+<meta property="og:title" content="HammUA">
+<meta property="og:description" content="Новости • Помощь • Работа • Украинское сообщество города Хамм">
+<meta property="og:url" content="https://hammua.de/">
+<meta property="og:site_name" content="HammUA">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HammUA">
+<meta name="twitter:description" content="Украинское сообщество города Хамм">
 
 <style>
 
@@ -20,7 +32,6 @@
 --purple2:#5b21b6;
 --glass:rgba(255,255,255,.12);
 --border:rgba(255,255,255,.18);
---text:#ffffff;
 }
 
 *{
@@ -44,86 +55,17 @@ background-size:cover;
 background-position:center;
 background-attachment:fixed;
 
-color:white;
-
-}
-
-header{
-
-position:fixed;
-top:0;
-left:0;
-width:100%;
-
-backdrop-filter:blur(20px);
-
-background:rgba(0,0,0,.25);
-
-border-bottom:1px solid rgba(255,255,255,.1);
-
-z-index:1000;
-
-}
-
-.nav{
-
-max-width:1300px;
-
-margin:auto;
+color:#fff;
 
 display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:18px 25px;
-
-}
-
-.logo{
-
-font-size:28px;
-
-font-weight:800;
-
-letter-spacing:1px;
-
-color:white;
-
-text-decoration:none;
-
-}
-
-.menu{
-
-display:flex;
-
-gap:20px;
-
-}
-
-.menu a{
-
-color:white;
-
-text-decoration:none;
-
-opacity:.9;
-
-transition:.3s;
-
-}
-
-.menu a:hover{
-
-color:#d8b4fe;
+flex-direction:column;
+min-height:100vh;
 
 }
 
 .hero{
 
-min-height:100vh;
+flex:1;
 
 display:flex;
 
@@ -131,9 +73,7 @@ justify-content:center;
 
 align-items:center;
 
-text-align:center;
-
-padding:40px;
+padding:30px;
 
 }
 
@@ -143,47 +83,49 @@ max-width:900px;
 
 background:var(--glass);
 
-border:1px solid var(--border);
+backdrop-filter:blur(20px);
 
-backdrop-filter:blur(18px);
+border:1px solid var(--border);
 
 border-radius:30px;
 
 padding:60px;
 
+text-align:center;
+
 box-shadow:0 25px 60px rgba(0,0,0,.35);
 
 }
 
-.hero h1{
+h1{
 
-font-size:74px;
+font-size:72px;
 
 margin-bottom:15px;
 
 }
 
-.hero h2{
+h2{
 
 font-size:34px;
 
 font-weight:600;
 
-margin-bottom:25px;
-
 color:#e9d5ff;
+
+margin-bottom:25px;
 
 }
 
-.hero p{
+p{
 
-font-size:22px;
+font-size:21px;
 
-line-height:1.6;
+line-height:1.7;
 
-opacity:.92;
+opacity:.95;
 
-margin-bottom:45px;
+margin-bottom:40px;
 
 }
 
@@ -209,7 +151,7 @@ text-decoration:none;
 
 font-weight:700;
 
-transition:.35s;
+transition:.3s;
 
 }
 
@@ -237,93 +179,13 @@ transform:translateY(-4px);
 
 }
 
-.section{
-
-max-width:1300px;
-
-margin:auto;
-
-padding:90px 25px;
-
-}
-
-.title{
-
-font-size:42px;
-
-text-align:center;
-
-margin-bottom:50px;
-
-}
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:25px;
-
-}
-
-.card{
-
-background:var(--glass);
-
-backdrop-filter:blur(18px);
-
-border:1px solid var(--border);
-
-border-radius:24px;
-
-padding:35px;
-
-transition:.35s;
-
-cursor:pointer;
-
-}
-
-.card:hover{
-
-transform:translateY(-8px);
-
-}
-
-.card .icon{
-
-font-size:52px;
-
-margin-bottom:20px;
-
-}
-
-.card h3{
-
-font-size:28px;
-
-margin-bottom:12px;
-
-}
-
-.card p{
-
-opacity:.9;
-
-line-height:1.5;
-
-}
-
 footer{
 
-padding:70px 20px;
-
 text-align:center;
 
-background:rgba(0,0,0,.35);
+padding:50px 20px;
 
-margin-top:80px;
+background:rgba(0,0,0,.35);
 
 }
 
@@ -335,62 +197,86 @@ text-decoration:none;
 
 }
 
+.seo{
+
+max-width:900px;
+
+margin:35px auto 0;
+
+font-size:15px;
+
+line-height:1.8;
+
+opacity:.75;
+
+}
+
 @media(max-width:768px){
 
-.hero h1{font-size:50px;}
+.hero-box{
 
-.hero h2{font-size:24px;}
+padding:35px;
 
-.hero p{font-size:18px;}
+}
 
-.menu{display:none;}
+h1{
 
-.hero-box{padding:35px;}
+font-size:48px;
+
+}
+
+h2{
+
+font-size:24px;
+
+}
+
+p{
+
+font-size:18px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
 
 }
 
 </style>
 
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Organization",
+"name":"HammUA",
+"url":"https://hammua.de",
+"description":"Украинское сообщество города Хамм (Германия).",
+"sameAs":[
+"https://t.me/hamm_ua",
+"https://facebook.com/berestyan"
+]
+}
+</script>
+
 </head>
 
 <body>
-
-<header>
-
-<div class="nav">
-
-<a class="logo" href="#">💜 HammUA</a>
-
-<div class="menu">
-
-<a href="#news">News</a>
-
-<a href="#events">Events</a>
-
-<a href="#help">HelpZone</a>
-
-<a href="#jobs">JobPoint</a>
-
-<a href="#smart">SmartBoard</a>
-
-</div>
-
-</div>
-
-</header>
 
 <section class="hero">
 
 <div class="hero-box">
 
-<h1>HammUA</h1>
+<h1>💜 HammUA</h1>
 
-<h2>Новости. Помощь. Сообщество.</h2>
+<h2>Украинское сообщество города Хамм</h2>
 
 <p>
-
-Независимое сообщество жителей и друзей Хамма
-
+Новости Хамма, помощь украинцам, работа, мероприятия,
+полезная информация и жизнь украинской общины в Германии.
+Присоединяйтесь к крупнейшему Telegram-сообществу HammUA.
 </p>
 
 <div class="buttons">
@@ -399,7 +285,7 @@ text-decoration:none;
 href="https://t.me/hamm_ua"
 target="_blank">
 
-🚀 Присоединиться к HammUA
+🚀 Перейти в Telegram
 
 </a>
 
@@ -417,231 +303,44 @@ target="_blank">
 
 </section>
 
-<section class="section">
-
-<h2 class="title">
-
-Разделы HammUA
-
-</h2>
-
-<div class="grid">
-  <div class="card" id="news">
-
-<div class="icon">📰</div>
-
-<h3>News</h3>
-
-<p>
-
-Последние новости сообщества HammUA.
-
-</p>
-
-</div>
-
-<div class="card" id="events">
-
-<div class="icon">🎤</div>
-
-<h3>Events</h3>
-
-<p>
-
-Мероприятия, встречи и события.
-
-</p>
-
-</div>
-
-<div class="card" id="help">
-
-<div class="icon">🤝</div>
-
-<h3>HelpZone</h3>
-
-<p>
-
-Помощь, поддержка и полезные контакты.
-
-</p>
-
-</div>
-
-<div class="card" id="jobs">
-
-<div class="icon">💼</div>
-
-<h3>JobPoint</h3>
-
-<p>
-
-Работа и вакансии в Хамме и регионе.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">💶</div>
-
-<h3>Grundsicherung 2.0</h3>
-
-<p>
-
-Пособия, выплаты и социальная поддержка.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">🌍</div>
-
-<h3>WelcomeSpot</h3>
-
-<p>
-
-Первые шаги и жизнь в Германии.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">🌐</div>
-
-<h3>Translate</h3>
-
-<p>
-
-Переводы и языковая помощь.
-
-</p>
-
-</div>
-
-<div class="card" id="smart">
-
-<div class="icon">⚙️</div>
-
-<h3>SmartBoard</h3>
-
-<p>
-
-Полезные сервисы и инструменты.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">🏛️</div>
-
-<h3>Öffentlichkeit</h3>
-
-<p>
-
-Официальная и публичная информация.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="icon">🎵</div>
-
-<h3>My Hexagon Studio</h3>
-
-<p>
-
-Музыка, медиа и творческие проекты.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
 <footer>
 
-<h2 style="margin-bottom:15px;">💜 HammUA</h2>
+<h3>HammUA</h3>
 
-<p style="margin-bottom:20px;">
-
-Независимое сообщество жителей и друзей Хамма
-
+<p style="margin-top:15px;margin-bottom:20px;">
+Новости • Помощь • Работа • Сообщество
 </p>
 
-<p style="margin-bottom:15px;">
-
-<a href="https://t.me/hamm_ua" target="_blank">
-
-Telegram HammUA
-
-</a>
-
-&nbsp;&nbsp;|&nbsp;&nbsp;
-
-<a href="https://t.me/berestyan" target="_blank">
-
-@berestyan
-
-</a>
-
+<p>
+<a href="https://t.me/hamm_ua" target="_blank">Telegram</a>
+&nbsp;|&nbsp;
+<a href="https://facebook.com/berestyan" target="_blank">Facebook</a>
 </p>
 
-<p style="margin-bottom:15px;">
+<div class="seo">
 
-<a href="https://facebook.com/berestyan" target="_blank">
+<h2>О сообществе HammUA</h2>
 
-Facebook
-
-</a>
-
+<p>
+HammUA — независимое украинское сообщество города Хамм (Hamm, Nordrhein-Westfalen, Deutschland).
+Здесь публикуются новости Хамма, вакансии, информация о жизни в Германии,
+полезные советы для украинцев, мероприятия, гуманитарная помощь,
+социальные выплаты, интеграция, жильё и ответы на самые важные вопросы.
 </p>
 
-<p style="opacity:.8;">
-
-© 2026 Vitaliy Berestyan / My Hexagon Studio
-
+<p>
+Если вы ищете украинцев в Хамме, Telegram-сообщество HammUA,
+работу в Hamm, новости города Хамм или помощь украинцам в Германии —
+вы попали по адресу.
 </p>
 
-<p style="margin-top:15px;font-size:14px;opacity:.7;">
+</div>
 
-Impressum • Datenschutz
-
+<p style="margin-top:40px;opacity:.6;">
+© 2026 HammUA • Vitaliy Berestyan
 </p>
 
 </footer>
 
-<script>
-
-document.querySelectorAll(".card").forEach(card=>{
-
-card.addEventListener("click",()=>{
-
-card.style.transform="scale(.97)";
-
-setTimeout(()=>{
-
-card.style.transform="translateY(-8px)";
-
-},120);
-
-});
-
-});
-
-</script>
-
 </body>
-
 </html>
