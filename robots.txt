@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hammua.de/sitemap.xml
