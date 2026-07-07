@@ -1,0 +1,77 @@
+{
+  "project": {
+    "name": "HammUA",
+    "type": "Community",
+    "country": "Germany",
+    "state": "North Rhine-Westphalia",
+    "city": "Hamm",
+    "website": "https://hammua.de",
+    "telegram": "https://t.me/hamm_ua"
+  },
+
+  "description": {
+    "en": "HammUA is an independent Ukrainian community in Hamm, Germany.",
+    "de": "HammUA ist eine unabhängige ukrainische Gemeinschaft in Hamm.",
+    "uk": "HammUA — незалежна українська спільнота міста Хамм.",
+    "ru": "HammUA — независимое украинское сообщество города Хамм."
+  },
+
+  "topics": [
+    "News",
+    "Jobs",
+    "Events",
+    "Community",
+    "Volunteering",
+    "Announcements",
+    "Germany",
+    "Support",
+    "Education",
+    "Children",
+    "Integration",
+    "Life in Hamm"
+  ],
+
+  "languages": [
+    "uk",
+    "ru",
+    "de"
+  ],
+
+  "audience": [
+    "Ukrainians living in Hamm",
+    "Refugees",
+    "Families",
+    "Volunteers",
+    "German organizations",
+    "Local residents"
+  ],
+
+  "keywords": [
+    "HammUA",
+    "Украинцы в Хамме",
+    "Українці в Хаммі",
+    "Ukrainians in Hamm",
+    "Hamm Ukraine",
+    "Telegram Hamm",
+    "Jobs Hamm",
+    "Help Ukraine Hamm",
+    "News Hamm",
+    "Events Hamm"
+  ],
+
+  "services": [
+    "Local news",
+    "Vacancies",
+    "Events",
+    "Community announcements",
+    "Useful information",
+    "Volunteer initiatives",
+    "Integration information"
+  ],
+
+  "social": {
+    "telegram": "https://t.me/hamm_ua"
+  },
+
+  "updated": "2026-07-07"
+}
