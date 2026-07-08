@@ -1,0 +1,38 @@
+{
+  "name": "HammUA - Ukrainian Community in Hamm",
+  "short_name": "HammUA",
+  "description": "The largest Ukrainian and Russian speaking community in Hamm, Germany. News, jobs, events, and support.",
+  "start_url": "https://hammua.de/",
+  "scope": "https://hammua.de/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#05060d",
+  "theme_color": "#6D28D9",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["community", "news"],
+  "screenshots": [
+    {
+      "src": "/og-image.PNG",
+      "sizes": "1200x630",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+/* TEAM */
+  Founder and Creator: Vitaliy Berestyan
+  Contact: berestyan@gmail.com
+  Telegram: @berestyan
+  Website: https://hammua.de
+
+/* SITE */
+  Last updated: July 8, 2026
+  Language: English, Ukrainian, Russian, German
+  Standards: HTML5, CSS3, JSON-LD
+  Software: GitHub Pages, GitHub Actions
+
+/* COMMUNITY */
+  HammUA is an independent Ukrainian community project
+  Location: Hamm, North Rhine-Westphalia, Germany
+  Telegram: https://t.me/hamm_ua
+
+/* THANKS */
+  Thanks to all community members and contributors

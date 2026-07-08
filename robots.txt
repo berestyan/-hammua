@@ -1,13 +1,17 @@
+# Robots.txt for HammUA
+# Allow all crawlers to index the entire site
+
 User-agent: *
-
 Allow: /
+Disallow:
 
+# Sitemap locations
 Sitemap: https://hammua.de/sitemap.xml
 
-Host: https://hammua.de
+# Crawl delay (optional)
+Crawl-delay: 0
 
-# AI crawlers
-
+# Specific rules for AI crawlers - ALLOW for better AI discoverability
 User-agent: GPTBot
 Allow: /
 
@@ -37,3 +41,12 @@ Allow: /
 
 User-agent: Bytespider
 Allow: /
+
+User-agent: Yandexbot
+Allow: /
+
+User-agent: Baidu
+Allow: /
+
+# Host preference
+Host: https://hammua.de

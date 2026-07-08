@@ -1,47 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+  
+  <!-- Homepage -->
   <url>
     <loc>https://hammua.de/</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://hammua.de/og-image.PNG</image:loc>
+      <image:title>HammUA - Ukrainian Community in Hamm</image:title>
+    </image:image>
   </url>
-
-  <url>
-    <loc>https://hammua.de/ai-gateway.html</loc>
-    <lastmod>2026-07-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
+  
+  <!-- About -->
   <url>
     <loc>https://hammua.de/about.html</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- AI Gateway -->
+  <url>
+    <loc>https://hammua.de/ai-gateway.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  
+  <!-- AI Hub -->
+  <url>
+    <loc>https://hammua.de/ai.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  
+  <!-- Facts -->
+  <url>
+    <loc>https://hammua.de/facts.html</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
-
+  
+  <!-- Ukrainian content -->
   <url>
-    <loc>https://hammua.de/ai.html</loc>
-    <lastmod>2026-07-07</lastmod>
+    <loc>https://hammua.de/ukrainci-u-hammi.html</loc>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.85</priority>
   </url>
-
+  
+  <!-- Russian content -->
+  <url>
+    <loc>https://hammua.de/telegram-hamm.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  
+  <!-- Legal pages -->
   <url>
     <loc>https://hammua.de/impressum.html</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.20</priority>
+    <priority>0.3</priority>
   </url>
-
+  
   <url>
     <loc>https://hammua.de/datenschutz.html</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.20</priority>
+    <priority>0.3</priority>
   </url>
-
 </urlset>
